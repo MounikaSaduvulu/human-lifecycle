@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live coding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+  h1{
+    color:yellow;
+    font-size:10vw;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 5px 5px 5px blue;
+    border-radius:10px 10px 80px 80px;
+    background-image:url(Images/Design12.jpeg);
+    padding-left:15vw;
+  }
+  h1::first-letter{
+    font-size:15vw;
+    color: orangered;
+  }
+ .one img{
+      position: relative;
+      width: 100%;
+      border-radius:0px 100px 0px 100px;
+    }
+ .one pre{
+      position: absolute;
+      top:23%;
+      left:40px;
+      transform: translate (-50%,-50%);
+      text-shadow: 1px 1px 1px orange;
+      font-size: 4vw;
+ }
+ .one{
+   transform:rotateZ(370deg);
+   transition-duration:2s;
+ }
+#two img{
+      position: relative;
+      width:100%;
+      height:90vw;
+      border-radius:100px 0px 100px 0px;
+     margin-top: 20px
+}
+#two p{
+  position: absolute;
+      top:5%;
+      left:40px;
+      transform: translate (-50%,-50%);
+      text-shadow: 1px 1px 1px orange;
+      font-size:3.5vw;
+      padding-right:30vw;
+      padding-left:5vw;
+      
+}
+#two{
+   transform:rotateZ(350deg);
+   transition-duration:2s;
+}
+
+#three img{
+      position: relative;
+      width:100%;
+      height:100vw;
+      border-radius:0px 100px 0px 100px;
+      margin-top:30px;
+}
+#three p{
+  position: absolute;
+      top:10%;
+      left:50px;
+      transform: translate (-50%,-50%);
+      text-shadow: 1px 1px 1px blue;
+      font-size:3.5vw;
+      padding-left:10vw;
+      padding-right:5vw;
+      color: white;
+      
+}
+#three{
+   transform:rotateZ(10deg);
+   transition-duration:2s;
+}
+#four img{
+      position: relative;
+      width:100%;
+      height:90vw;
+      border-radius:100px 0px 100px 0px;
+     margin-top:20px
+}
+#four p{
+  position: absolute;
+      top:10%;
+      left:40px;
+      transform: translate (-50%,-50%);
+      text-shadow: 1px 1px 1px black;
+      font-size:3.5vw;
+      padding-right:30vw;
+      padding-left:5vw;
+      color: white;
+      
+}
+#four{
+   transform:rotateZ(350deg);
+   transition-duration:2s;
+}
+ #five img{
+      position: relative;
+      width:100%;
+      height:100vw;
+      border-radius:0px 100px 0px 100px;
+      margin-top:30px;
+}
+#five pre{
+  position: absolute;
+      top:30%;
+      left:50px;
+      transform: translate (-50%,-50%);
+      text-shadow: 1px 1px 1px blue;
+      font-size:3.5vw;
+      padding-left:1vw;
+      padding-right:5vw;
+      color: white;
+      
+}
+#five{
+   transform:rotateZ(10deg);
+   transition-duration:2s;
+}
+#six img{
+      position: relative;
+      width:100%;
+      height:90vw;
+      border-radius:100px 0px 100px 0px;
+     margin-top:30px;
+      }
+#six p{
+      position: absolute;
+      top:11%;
+      left:40px;
+      transform: translate (-50%,-50%);
+      text-shadow: 1px 1px 1px greenyellow;
+      font-size:3.5vw;
+      padding-right:10vw;
+      padding-left:5vw;
+      color:black;
+      }
+#six{
+   transform:rotateZ(349deg);
+   transition-duration:2s;
+}
+#seven img{
+      position: relative;
+      width:100%;
+      height:100vw;
+      border-radius:0px 100px 0px 100px;
+      margin-top:30px;
+}
+#seven pre{
+  position: absolute;
+      top:35%;
+      left:50px;
+      transform: translate (-50%,-50%);
+      text-shadow: 1px 1px 1px white;
+      font-size:3.5vw;
+      padding-left:10vw;
+      padding-right:1vw;
+      color: black;
+      }
+#seven{
+   transform:rotateZ(10deg);
+   transition-duration:2s;
+}
+#eight img{
+      position: relative;
+      width:100%;
+      height:90vw;
+      border-radius:100px 0px 100px 0px;
+     margin-top:30px;
+      }
+#eight pre{
+      position: absolute;
+      top:30%;
+      left:40px;
+      transform: translate (-50%,-50%);
+      text-shadow: 1px 1px 1px red;
+      font-size:4vw;
+      padding-right:10vw;
+      padding-left:5vw;
+      color:white;
+      }
+#eight{
+   transform:rotateZ(349deg);
+   transition-duration:2s;
+}
+ #nine img{
+      position: relative;
+      width:100%;
+      height:100vw;
+      border-radius:0px 100px 0px 100px;
+      margin-top:30px;
+ }
+ #nine pre{
+  position: absolute;
+      top:10%;
+      left:10px;
+      transform: translate (-50%,-50%);
+      text-shadow: 1px 1px 1px blue;
+      font-size:3.5vw;
+      
+      padding-right:5vw;
+      color: white;
+      }
+#nine{
+   transform:rotateZ(10deg);
+   transition-duration:2s;
+}
+a{
+  text-decoration: none;
+ color: blue;
+}
+footer{
+  text-align: center;
+  background-color:green;
+  width:100vw;
+  height:auto;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  color: white;
+  
+}
+</style>
+</head>
+
+<body bgcolor="orange">
+  <marquee><p style=" font-size: 30px" >Stay Home <i class="fa fa-home" style="color:red" ></i>&nbsp;Stay Safe
+    &#9829</p></marquee>
+  <h1 style="font-family: 'Dancing Script', cursive;" >
+   Human life cycle
+  </h1>
+  <a href="#two">stage1 !</a>
+  <a href="#three">stage2 !</a>
+  <a href="#four">stage3 !</a>
+  <a href="#five">stage4 !</a>
+  <a href="#six">stage5 !</a>
+  <a href="#seven">stage6 !</a>
+  <a href="#eight">stage7 !</a>
+  <a href="#nine">stage8 !</a>
+  <br><br><br>
+ <div class="one">
+  <img src="Images/Design8.jpeg" >
+    <pre><p>
+     Human beings are culture-
+     bearing  species that fall 
+     under the genus Homo and
+     the family Hominidae.
+     Inappearance, human beings 
+     are physically similar to
+     apes.</p><pre>
+  </div>
+  
+    <div id="two">
+   <img src="Images/Design17.jpeg">
+   <p>
+     <b>1) Pregnancy:</b>
+   The sperm from the adult male human and the egg from the adult female human form a zygote inside the uterus of the female. Over time, the zygote develops and forms into an embryo. <br><br>Initially, the embryo looks like a cluster of cells, but after eight weeks, the embryo resembles the human body and is called a foetus. The developing embryo is called foetus during this stage. During this stage, the foetus is entirely dependent on the female for breathing, eating and other kinds of resources
+   </p>
+   </div>
+   
+    <div id="three">
+   <img src="Images/Design18.jpeg">
+    <p>
+      <b> 2) Infancy:</b>
+
+     After around nine months, the foetus is fully developed to be born. This stage in human development marks the period from birth to age one. Infancy is the earliest part of childhood, where the infant grows in size and shape. During this stage, the infant requires a lot of attention as they are completely dependent on their mothers. Infants develop their behaviour, physiology and cognition. Gradually, the infants learn to suck, swallow and cry if they are in an uncomfortable situation. Since the infants are unable to speak, crying is their way of communicating. The mother tends to breastfeed their infants during this stage
+   </p></div>
+   
+ <div id="four">
+   <img src="Images/Design10.jpeg">
+    <p>
+      <b>3) Toddler years:</b>
+
+     The term ‘to toddle’ means to walk unsteadily and the child has a clumsy walk during this period. This stage marks the end of early childhood. During this period, the child ages two to three years old. This stage in a child’s life is where they undergo immense cognitive, emotional and social development
+   </p></div>
+   <div id="five">
+   <img src="Images/Design11.jpeg">
+    <pre>
+      <b>4) Childhood:</b>
+        Here, the child ages 
+        from three to six years
+        of age and is crawling form
+        mobility. Inthis stage,then
+        child crawls and eventually
+        learns to walk talk, eat
+        independently, and become
+        more aware of their 
+        surroundings. The child 
+        is more social and active
+        during this period and
+        intrigued to learn new things.
+   </pre></div>
+<div id="six">
+   <img src="Images/Design15.jpeg">
+ <p>
+      <b>5) Adolescence:</b>
+        Here, the child ages from nine to thirteen years of age and this period mark the beginning of adolescence. In this stage, the child grows into an adolescent, through a period called puberty. Puberty occurs during the initial stages of their teenage years, and that’s why adolescents are also called teenagers. In this stage, the teenager grows rapidly and physical changes begin to appear. These changes include hair growth, structural changes in body shape, voice cracking in adolescent males, breast growth in adolescent females and so on.<br>
+The behaviour pattern also changes, as they are more independent in performing daily tasks</p>
+   </div>
+   <div id="seven">
+     <img src="Images/Design5.jpeg">
+     <pre><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6) Adulthood:</b>
+                  Human beings who
+                age from 20 to 60
+                years of age are 
+               known as adults.
+             Here,human beings 
+           are sexually mature and 
+         capable of reproducing.
+        The body is fully 
+       developed by now,and the 
+   adult gains experience 
+   and responsibility.Adults have 
+full mental and social development 
+by this stage.
+     </pre>
+   </div>
+ <div id="eight">
+   <img src="Images/Design9.jpeg">
+ <pre>
+    <b>7) Middle age:</b>
+    The time period of
+   adulthood that starts
+   from 30 to 50 years
+      of age.</pre>
+   </div>  
+<div id="nine">
+   <img src="Images/Design14.jpeg">
+    <pre>
+      <b>8) Old age:</b>
+    When a human being reaches 60  or
+    65 years of age, they are called old
+    people. This period starts from 65
+    years of age, until the end of their
+    lives. During  this stage,the
+    intestine absorbs fewe nutrients
+    from food sources.The physical
+    capabilities of doing tasks also
+    reduce and they again depend on
+    external support to do things.
+
+                   The behaviour of old
+                   people in this stage
+                   varies, depending on
+                   the immunity and
+                   lifestyle of the human.
+                   The average life
+                   expectancy of human 
+                   beings varies from 70
+                   to 85 years. But this
+                  also changes depending
+                  on their lifestyle.
+</pre></div>
+<br><br><hr color="yellow">
+<footer>
+  <p>Mail Id: mounika.s953@gmail.com</p>
+  <p>Instagram Id: Monark munni</p>
+ <p> what's app no.**********</p>
+ <address> address:8-37-S13-776,
+          Bhavani nagar,
+          K.T.Road, Tirupati,
+          517501,Chittoor,
+          Andhrapradesh.</addeess>
+  
+  
+</footer><hr color="yellow">
+
+
+
+
+
+</body>
+</html>
